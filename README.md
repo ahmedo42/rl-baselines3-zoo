@@ -508,46 +508,6 @@ pip install -r requirements.txt
 
 Please see [Stable Baselines3 documentation](https://stable-baselines3.readthedocs.io/en/master/) for alternatives.
 
-### Docker Images
-
-Build docker image (CPU):
-```
-make docker-cpu
-```
-
-GPU:
-```
-USE_GPU=True make docker-gpu
-```
-
-Pull built docker image (CPU):
-```
-docker pull stablebaselines/rl-baselines3-zoo-cpu
-```
-
-GPU image:
-```
-docker pull stablebaselines/rl-baselines3-zoo
-```
-
-Run script in the docker image:
-
-```
-./scripts/run_docker_cpu.sh python train.py --algo ppo --env CartPole-v1
-```
-
-## Tests
-
-To run tests, first install pytest, then:
-```
-make pytest
-```
-
-Same for type checking with pytype:
-```
-make type
-```
-
 
 ## Citing the Project
 
